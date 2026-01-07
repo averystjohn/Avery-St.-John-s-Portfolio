@@ -1,11 +1,13 @@
+/* ---------- GLOBAL ---------- */
 body {
   overflow-x: hidden;
-  background-color: #dcd6F7;
+  background-color: #dcd6f7;
 }
 
+/* ---------- HERO ---------- */
 #hero-section {
-  background-image: 
-    linear-gradient(rgba(10,0,30,0.6), rgba(10,0,30,0.6)), url("img/ux-photo.tiff");
+  background-image: linear-gradient(rgba(10,0,30,0.6), rgba(10,0,30,0.6)),
+    url("img/ux-photo.tiff");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,23 +37,9 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-#footer-section {
-  text-align: center;
-  background-color: #130d24;
-  color: #AFB9E4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 4rem;
-}
-
-#footer-section p {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
+/* ---------- ICONS ---------- */
 i {
-  color: #F4EEFF;
+  color: #f4eeff;
   font-size: 2rem;
 }
 
@@ -61,272 +49,70 @@ i {
   }
 }
 
+/* ---------- NAV ---------- */
 .nav-item {
   color: #130d24;
   margin-right: 20px;
 }
 
-#mission-section {
-  background-color: #0e0813;
-  padding: 1rem;
-}
-
-@media (min-width: 768px) {
-  #mission-section {
-    padding: 2rem 4rem 4rem 4rem;
-  }
-}
-
-#mission-section h1 {
-  text-align: center;
-  font-family: "Montserrat", serif;
-  color: #e6deff;
-  padding-bottom: 1rem;
-}
-
-@media (max-width: 767px) {
-  #mission-section h1 {
-    padding-top: 0.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  #mission-section h1 {
-    padding-bottom: 2rem;
-  }
-}
-
-#mission-section p {
-  padding: 1em;
-  color: #e6deff;
-  font-family: Arial, sans-serif;
-}
-
-#projects-section {
-  background-color: #0e0813;
-  padding: 1rem;
-}
-
-@media (max-width: 767px) {
-  #projects-section {
-    padding: 1rem 0 2rem 0;
-  }
-}
-
-@media (min-width: 768px) {
-  #projects-section {
-    padding: 2rem 0 6rem 0;
-  }
-}
-
-#projects-section h1 {
-  color: #e6deff;
-  padding: 1rem 0;
-  font-family: "Montserrat", sans-serif;
-}
-
-#projects-section p {
-  color: #e6deff;
-  padding: 1rem 0;
-  font-family: "Montserrat", sans-serif;
-}
-
-@media (min-width: 768px) {
-  #projects-section h1 {
-    padding-bottom: 3rem;
-  }
-}
-
-#projects-section i {
-  color: #e6deff;
-  font-size: 4rem;
-}
-
-#projects-section i:hover {
-  color: #424874;
-}
-
-#skills-section {
-  background-color: #0e0813;
-  text-align: center;
-}
-
-@media (max-width: 767px) {
-  #skills-section {
-    padding: 2rem 0;
-  }
-}
-
-@media (min-width: 768px) {
-  #skills-section {
-    padding: 3rem 4rem 5rem 4rem;
-  }
-}
-
-#skills-section i {
-  font-size: 4rem;
-  color: #e6deff;
-}
-
-#skills-section h1 {
-  padding-bottom: 1rem;
-  font-family: "Montserrat", sans-serif;
-  color: #e6deff;
-}
-
-@media (min-width: 768px) {
-  #skills-section h1 {
-    padding-bottom: 2rem;
-  }
-}
-
-#skills-section p {
-  font-family: Arial, sans-serif;
-  color: #e6deff;
-}
-
-#contact-section {
-  background-color: #0e0813;
-  text-align: center;
-}
-
-@media (max-width: 767px) {
-  #contact-section {
-    padding: 1rem 0 2rem 0;
-  }
-}
-
-@media (min-width: 768px) {
-  #contact-section {
-    padding: 2rem 0 6rem 0;
-  }
-}
-
-#contact-section h1 {
-  color: #e6deff;
-  padding: 1rem 0;
-  font-family: "Montserrat", sans-serif;
-}
-
-@media (min-width: 768px) {
-  #contact-section h1 {
-    padding-bottom: 3rem;
-  }
-}
-
-#contact-section i {
-  color: #e6deff;
-  font-size: 4rem;
-}
-
-#contact-section i:hover {
-  color: #424874;
-}
-
-#hero-section,
-#footer-section,
+/* ---------- SECTION BASE ---------- */
 #mission-section,
-#projects-section,
+#ux-projects-section,
+#writing-section,
+#video-section,
 #skills-section,
 #contact-section {
+  background-color: #0e0813;
+  color: #e6deff;
   overflow: hidden;
 }
 
-#mission-target,
-#projects-target,
-#skills-target,
-#contact-target {
-  position: relative;
-  top: -100px;
-}
-
-.case-study-body {
-  background-color: #0e0813;
-  color: #e6deff;
-  font-family: "Montserrat", sans-serif;
-  padding: 2rem;
-}
-
-.case-study h1 {
-  font-family: "Marcellus", serif;
-  text-align: center;
-  margin-bottom: 1rem;
-  color: #cbb4f4;
-}
-
-.case-study h2 {
-  color: #AFB9E4;
-  margin-top: 2rem;
-}
-
-.case-study ul {
-  padding-left: 1.2rem;
-}
-
-.case-study .subtitle {
-  text-align: center;
-  font-style: italic;
-  color: #aaa;
-  margin-bottom: 2rem;
-}
-
-.case-image {
-  width: 100%;
-  max-width: 700px;
-  border-radius: 8px;
-  margin: 1rem 0;
-  display: block;
-}
-/* ---------- NEW SECTIONS: UX / Writing / Video ---------- */
-
-/* Match your existing dark section background + spacing */
-#ux-projects-section,
-#writing-section,
-#video-section {
-  background-color: #0e0813;
-  color: #e6deff;
-}
-
+/* ---------- SECTION PADDING ---------- */
 @media (max-width: 767px) {
+  #mission-section,
   #ux-projects-section,
   #writing-section,
-  #video-section {
+  #video-section,
+  #skills-section,
+  #contact-section {
     padding: 1rem 0 2rem 0;
   }
 }
 
 @media (min-width: 768px) {
+  #mission-section,
   #ux-projects-section,
   #writing-section,
-  #video-section {
-    padding: 2rem 0 6rem 0;
+  #video-section,
+  #skills-section,
+  #contact-section {
+    padding: 2rem 4rem 6rem 4rem;
   }
 }
 
+/* ---------- HEADINGS ---------- */
+#mission-section h1,
 #ux-projects-section h1,
 #writing-section h1,
-#video-section h1 {
-  color: #e6deff;
-  padding: 1rem 0;
+#video-section h1,
+#skills-section h1,
+#contact-section h1 {
+  text-align: center;
   font-family: "Montserrat", sans-serif;
-}
-
-@media (min-width: 768px) {
-  #ux-projects-section h1,
-  #writing-section h1,
-  #video-section h1 {
-    padding-bottom: 2rem;
-  }
-}
-
-#ux-projects-section p,
-#writing-section p,
-#video-section p {
   color: #e6deff;
-  font-family: "Montserrat", sans-serif;
+  padding-bottom: 1.5rem;
 }
 
-/* Make the icons in the UX section match your Projects section */
+/* ---------- MISSION ---------- */
+#mission-section p {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1em;
+  font-family: Arial, sans-serif;
+  color: #e6deff;
+}
+
+/* ---------- UX PROJECTS ---------- */
 #ux-projects-section i {
   color: #e6deff;
   font-size: 4rem;
@@ -336,8 +122,11 @@ i {
   color: #424874;
 }
 
-/* ---------- WRITING LIST GROUP (DARK MODE) ---------- */
+#ux-projects-section p {
+  font-family: "Montserrat", sans-serif;
+}
 
+/* ---------- WRITING SAMPLES ---------- */
 #writing-section .list-group-item {
   background-color: rgba(230, 222, 255, 0.06);
   border: 1px solid rgba(230, 222, 255, 0.15);
@@ -360,17 +149,9 @@ i {
 #writing-section .list-group-item:focus {
   background-color: rgba(66, 72, 116, 0.25);
   border-color: rgba(230, 222, 255, 0.25);
-  color: #e6deff;
 }
 
-/* Prevent the default blue focus ring from looking weird on dark */
-#writing-section .list-group-item:focus {
-  outline: 2px solid rgba(175, 185, 228, 0.4);
-  outline-offset: 2px;
-}
-
-/* ---------- VIDEO CARDS (DARK MODE) ---------- */
-
+/* ---------- VIDEO CARDS ---------- */
 #video-section .card-body {
   background-color: rgba(230, 222, 255, 0.06);
   border: 1px solid rgba(230, 222, 255, 0.15);
@@ -390,8 +171,8 @@ i {
 
 #video-section h2,
 #video-section .h5 {
-  color: #e6deff;
   font-family: "Montserrat", sans-serif;
+  color: #e6deff;
 }
 
 #video-section .card-body p {
@@ -399,13 +180,98 @@ i {
   color: rgba(230, 222, 255, 0.85);
 }
 
-/* ---------- NAVBAR ANCHOR OFFSETS FOR NEW TARGETS ---------- */
+/* ---------- SKILLS ---------- */
+#skills-section i {
+  font-size: 4rem;
+  color: #e6deff;
+}
 
-/* Keep consistent with your existing offsets */
+#skills-section p {
+  font-family: Arial, sans-serif;
+  color: #e6deff;
+}
+
+/* ---------- CONTACT ---------- */
+#contact-section i {
+  color: #e6deff;
+  font-size: 4rem;
+}
+
+#contact-section i:hover {
+  color: #424874;
+}
+
+/* ---------- FOOTER ---------- */
+#footer-section {
+  text-align: center;
+  background-color: #130d24;
+  color: #afb9e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 4rem;
+}
+
+#footer-section p {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ---------- NAV OFFSET TARGETS ---------- */
+#mission-target,
 #ux-projects-target,
 #writing-target,
-#video-target {
+#video-target,
+#skills-target,
+#contact-target {
   position: relative;
   top: -100px;
 }
 
+/* ---------- MOBILE ICON SCALE ---------- */
+@media (max-width: 767px) {
+  #ux-projects-section i,
+  #skills-section i,
+  #contact-section i {
+    font-size: 3rem;
+  }
+}
+
+/* ---------- CASE STUDIES ---------- */
+.case-study-body {
+  background-color: #0e0813;
+  color: #e6deff;
+  font-family: "Montserrat", sans-serif;
+  padding: 2rem;
+}
+
+.case-study h1 {
+  font-family: "Marcellus", serif;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #cbb4f4;
+}
+
+.case-study h2 {
+  color: #afb9e4;
+  margin-top: 2rem;
+}
+
+.case-study ul {
+  padding-left: 1.2rem;
+}
+
+.case-study .subtitle {
+  text-align: center;
+  font-style: italic;
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+.case-image {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 8px;
+  margin: 1rem auto;
+  display: block;
+}
